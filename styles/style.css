@@ -44,7 +44,7 @@ img {
     font-weight: bold;
 }
 
-#projects-completed {
+.extra-padding {
     margin-top: 2em;
     margin-bottom: 2em;
 }
