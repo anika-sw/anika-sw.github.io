@@ -5,6 +5,7 @@
 
 body {
     margin-left: 2%;
+    margin-right: 2%;
 }
 
 footer {
@@ -26,7 +27,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0em 0em 4em 0em;
 }
 
 .home-page {
@@ -47,4 +47,23 @@ img {
 .extra-padding {
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.container {
+    background-color: #008d80;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.collage {
+    width: 300px;
+}
+
+.project-img {
+    padding: 0em 0em 4em 0em;
 }
