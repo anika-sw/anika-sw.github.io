@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: #393D47;
+}
+
+body {
+    margin-left: 2%;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+}
+
+p {
+    margin: 3%;
+    font-weight:400;
+}
+
+li {
+    display: block;
+}
+
+img {
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 0em 4em 0em;
+}
+
+.home-page {
+    text-align: center;
+}
+
+#welcome-message {
+    text-align: center;
+    font-size: 32pt;
+    font-weight: bold;
+    padding: 75px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+#projects-completed {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
