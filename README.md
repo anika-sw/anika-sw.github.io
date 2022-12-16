@@ -1,97 +1,123 @@
-# Personal Portfolio Site
+# Weather Report
 
-## Introduction
+## Skills Assessed
 
-It is common for developers to create a website to show off their web-dev skills and document their work and interests. These sites often feature things like:
+- Following directions and reading comprehension
+- Structuring content in HTML
+- Applying styles with CSS
+- Using variables
+- Creating functions
+- Manipulating the DOM
+- Handling events
+- Using Git
+- Designing an intentional user experience
+- Using Axios to call 3rd party APIs
+- Using a proxy server to manage API keys
+- Handling asynchronous calls
 
-- A professional introduction of themselves, careers, and interests
-- A portfolio of projects that they've created and/or collaborated on
-- A blog to share their experiences, thoughts, and/or subject matter expertise
-- Other materials to share any non-coding interests and hobbies
-- A site designed to express themselves
+## Goal
 
-We will use HTML & CSS to create a static site whose content is our personal portfolio. Our personal portfolio site should contain information about ourselves and the coding work we've done.
+"Do I need to bring a jacket?" "Will it snow today?" "How hot will it be?" When we have questions like these, we often pull open a weather app!
 
-### Some Inspiration
-- [http://lizabinante.com/](http://lizabinante.com/)
-- [http://where.coraline.codes/](http://where.coraline.codes/)
-- [http://danisaurus.github.io/](http://danisaurus.github.io/)
-- [http://www.fenslattery.com/](https://fenslattery.com/)
-- [https://www.heyellieday.com/](https://heyellieday.com/)
-- [http://car.oline.codes/](http://car.oline.codes/)
+Great weather apps do these two things:
 
-## Learning Goals:
-- Practice creating semantic HTML
-- Practice applying visual styles with CSS
-- Use both HTML & CSS together to create a comprehensive design
+1. Pull weather data from a data source
+1. Display the weather in readable, compelling way
 
-## Project Requirements
+![DuckDuckGo's weather modal, which features city name, temperature reading, and the weather. Some icons show sunny weather, some icons show rainy weather, and some show cloudy weather.](ada-project-docs/assets/example-duckduckgo.png)  
+_Fig. DuckDuckGo's weather modal, which features city name, temperature reading, and weather icons._
 
-### Only Use Static HTML and CSS
+Our goal is to create a fun, small weather app that focuses on displaying the weather.
 
-We should only use static HTML and CSS for this project. Preprocessors (haml, erb, sass, less, etc.) and Javascript of any kind are not allowed. All submitted HTML needs to pass as valid HTML through an [HTML Validator](https://validator.w3.org/).
+Our weather app will set the weather using user interaction and get the weather from a 3rd party API, OpenWeather.
 
-## Wave 1 - Basic HTML
+![Example weather app: The temperature reads 62, in yellow text. The selected dropdown for "Sky" is "Cloudy." There is a depiction of cloudy weather. The city name is "Hoboken." The header reads "Hoboken."](ada-project-docs/assets/cloudy-62.png)  
+_Fig. Example weather app displaying the weather for Hoboken._
 
-This portfolio site must have the following HTML files:
+![Example weather app: The temperature reads 85, in red text. The selected dropdown for "Sky" is "Sunny." There is a depiction of sunny weather. The city name is "Santo Domingo" The header reads "Santo Domingo."](ada-project-docs/assets/santo-domingo-85.png)  
+_Fig. Example weather app displaying the weather for Santo Domingo._
 
-- `index.html` must include your name somewhere.
+![Example weather app: The temperature reads 38, in teal text. The selected dropdown for "Sky" is "Snowy." There is a depiction of snowy weather. The city name is "Bozeman." The header reads "Bozeman."](ada-project-docs/assets/snow-38.png)  
+_Fig. Example weather app displaying the weather for Bozeman._
 
-- `about.html` should include some information about you, your interests, background or similar. Only post what you are comfortable sharing.
+![Example weather app: The temperature reads 49, in teal text. The selected dropdown for "Sky" is "Rainy." There is a depiction of rainy weather. The city name is "Seattle." The header reads "Seattle."](ada-project-docs/assets/rainy-49.png)  
+_Fig. Example weather app displaying the weather for Seattle._
 
-- `portfolio.html` must include information about several projects you have completed at Ada (or elsewhere) with links to the GitHub repo (if available), descriptions, images, etc.
+## How to Complete and Submit
 
-### Layout
+Follow the requirements below and build a small weather app.
 
-Each page in this project must comply with the following layout requirements:
+At submission time, no matter where you are, submit the project via Learn.
 
-- Has the following tags: `<header>`, `<footer>`, and `<nav>`
-- Inside of the `<nav>`, there are links to all of the other pages
+## JavaScript Requirements
 
-## Wave 2 - Styling
+You are required to use vanilla JavaScript for all parts of this project, including the optional enhancements.
 
-### Required Content
+## Axios
+The only extra JavaScript library we should load is [`Axios`](https://axios-http.com/docs/intro).
 
-- Uses at least one CSS file (likely named `style.css`)
+To download the `axios` node module, run `yarn install`
 
-## Wave 3 - Layout
+To include axios in your project, include the following script tag below the script tag linking `index.js`:
+- `<script src="./node_modules/axios/dist/axios.min.js"></script>`
 
-### Required Content
+This should be done during the Wave 1 initial setup of your `index.html` page.
 
-Present the elements on the page as you see fit by using the following at least once:
-* a grid container with a few grid items
-* a flexbox container with a few flex items
+## Workflow Requirements
 
-Both of these containers do not need to be on the same page. Try using one for one page, and the other for another page!
+- Create at least five git commits throughout this project
+- Use the following files and folders:
+  - `index.html`
+  - `src/index.js`
+  - `styles/index.css`
+  - `assets` folder, potentially for holding images
+- Create and add more folders and files as needed
 
-<details>
-<summary>If you need some inspiration, here are two common layouts you can replicate</summary>
+## Content Requirements
 
-![Personal Portfolio Wfireframe Example 1](./assets/personal-portfolio_wireframe1.png)  
+For this project, there are no requirements around color schemes, font choices, or layouts. 
 
-![Personal Portfolio Wfireframe Example 2](./assets/personal-portfolio_wireframe2.png)  
-</details>
-</br>
+Note that applying styles with CSS is one of many learning goals of this project -- it is not the central learning goal. You may enjoy being creative with styles, but we encourage you to not concern yourself with getting the styles perfect. Remember, you can always choose to continue working on styling after you've completed all functional requirements. 
 
-### Non-Functional Requirements
+However, _at a minimum_, your project must contain these elements:
 
-The site should follow best practices, including:
-  - All markup should be semantic, with consideration of hierarchy and accessibility
-  - CSS should be concise and well-formatted
-  - Images and stylesheets should be kept in their own folders, called `images` and `stylesheets`, respectively
-  - Run your site through an [HTML Validator](https://validator.w3.org/#validate_by_upload) and fix all errors before submitting
+Wave 2:
 
-### Optional Enhancements
+1. An element that displays the temperature
+1. A clickable element to increase temperature
+1. A clickable element to decrease temperature
+1. An element that displays a landscape
 
-- Create a `blog/` or `code-journal/` directory. Within this directory...
-  - create single `html` file for each entry in your blog/journal
-  - update the nav on the rest of your site to reference each entry as a sublist/subnav.
-  - update any tags with path references (`img`, `link`, `a` tags) to accommodate for the entries being in a different directory.
-- Create any number of additional pages or directories.
+Wave 3:
 
-### A Word of Caution
+1. An element that displays the city name
+1. An element that contains an `<input type="text">` element, used to rename the city
 
-A lot of developers find their initial foray into CSS frustrating. Every browser implements the CSS standard a little (or a lot) differently. Learning to manipulate elements and understand the _box model_ takes time. Layout can be especially challenging to developers new to CSS. For this project, focus on understanding the mechanics and semantics of HTML and CSS, and how the two work together.
+Wave 4:
 
-### Optional: Deploy with GitHub Pages
-Want more? Make your site live on the internet! There are a lot of ways to go about hosting a live website, but GitHub provides a way to host static sites for free using your GitHub account. [Follow the steps listed here](https://pages.github.com/).
+1. A clickable element to get the current temperature of the displayed city name
+
+Wave 5:
+
+1. A `<select>` dropdown element to set the sky type
+1. An element that displays a sky
+
+Wave 6:
+
+1. A clickable element to reset the city name
+
+## Detailed Content Requirements
+
+[Wave 1: Create Wireframes and HTML](./ada-project-docs/wave-01.md)
+
+[Wave 2: Increase and Decrease Temperature](./ada-project-docs/wave-02.md)
+
+[Wave 3: Naming the City](./ada-project-docs/wave-03.md)
+
+[Wave 4: Calling APIs](./ada-project-docs/wave-04.md)
+
+[Wave 5: Selecting the Sky](./ada-project-docs/wave-05.md)
+
+[Wave 6: Resetting the City Name](./ada-project-docs/wave-06.md)
+
+[Optional Enhancements to inspire you](./ada-project-docs/optional-enhancements.md)

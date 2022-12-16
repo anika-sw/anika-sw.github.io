@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "scripts": {
+    "predeploy": "rm -rf dist && yarn run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html ",
+    "build": "parcel build index.html --public-url /weather-report/"
+    }
+}
